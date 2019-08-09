@@ -1,0 +1,21 @@
+{
+  "name": "openapi-petstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "tsc --noEmit",
+    "generate": "openapi-generator generate -g typescript-fetch -i ./src/petstore.yml -o ./src/api/petstore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbark/openapi-petstore.git"
+  },
+  "author": "Gustaf Barkeling",
+  "license": "MIT",
+  "dependencies": {
+    "@openapitools/openapi-generator-cli": "0.0.16-4.1.0",
+    "typescript": "^3.5.3"
+  }
+}
